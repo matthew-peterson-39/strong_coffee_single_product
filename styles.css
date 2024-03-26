@@ -181,9 +181,102 @@ button {
     box-sizing: border-box;
 }
 
-/* !!!!!!!!!!!!!!!!!! */
-/* DISCLAIMER SECTION */
-/* !!!!!!!!!!!!!!!!!! */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/* WE DO COFFEE BETTER */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+.we-do-coffee-better {
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.we-do-coffee-better .text-content {
+    max-width: 30%;
+    margin-inline: auto;
+}
+
+.ingredient-banner {
+    display: flex;
+    /* align-items: center */
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.ingredient-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/*    TESTIMONIALS     */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/* PRODUCT W/ ROUNDED  */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+.product-footer {
+    margin-block: 3.625rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.product-footer h2 {
+    text-align: center;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/* RADICAL TRANSPARENCY*/
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+.svg-container {
+    width: 100%; /* Full width of the container */
+    display: inline-block; /* Adjust as needed */
+    line-height: 0; /* Remove space below inline elements */
+    font-size: 0; /* Remove space due to font size */
+}
+
+.responsive-svg {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space */
+    object-fit: cover; /* Cover the container, potentially cropping the SVG */
+}
+
+.radical-transparency .text-content {
+    margin-inline: auto;
+    max-width: 30%;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/*    HOW IT WORKS     */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/*   REVIEW CAROUSEL   */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+/* PRODUCT W/ SQUARE   */
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/* !!!!!!!!!!!!!!!!!!!*/
+/*     DISCLAIMER     */
+/* !!!!!!!!!!!!!!!!!!!*/
 .disclaimer {
     color: white;
     display: flex;
@@ -243,6 +336,16 @@ button {
     }
     .purchase .with-pad {
         padding-bottom: 6rem;
+    }
+    .we-do-coffee-better .text-content, 
+    .radical-transparency .text-content{
+        max-width: 75%;
+        margin-right: auto;
+    }
+
+    .product-footer h2 {
+        font-size: 12px;
+        text-align: center;
     }
 }
 
