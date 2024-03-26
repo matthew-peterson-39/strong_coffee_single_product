@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+section {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: .325rem;
+    background-color: white;
+    color: black;
+    padding: .625rem;
+}
+
+.red {
+    background-color: #ED3B46;
+}
+
+.tan {
+    background-color: #fde6b7;
+}
+
+.blue {
+    background-color: #264978;
+}
+
+.black {
+    background-color: #000;
+}
+
+.rounded-border {
+    border: 2px solid black;
+    border-radius: 4rem;
+    background-color: white;
+    color: black;
+    padding: .625rem;
+    margin-top: -2.525rem;
+    white-space: nowrap;
+}
+
+.underline {
+    height: 2px; /* Adjust the height of the underline */
+    background-color: black; /* Set the background color to black */
+    width: 100%; /* Make the underline span the full width */
+}
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: .625rem;
+}
+
+.product-image {
+    width: 300px;
+}
+
+.checkout-button {
+    width: 100%;
+}
+
+/* !!!!!!!!!!!!!!!!!! */
+/*   LANDING SECTION  */
+/* !!!!!!!!!!!!!!!!!! */
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 10px;
+    max-width: 100px;
+    height: 100px;
+}
+
+.product-content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.left-half, .right-half {
+    width: 50%;
+}
+
+.left-half {
+    height: auto;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    border: 2px solid black;
+}
+
+.right-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.625rem;
+    color: white;
+}
+
+.right-half h1 {
+    text-align: center;
+}
+
+.right-half > * {
+    margin-left: 1rem;
+}
+
+.price-display {
+    display: flex;
+    min-width: 30%;
+    align-items: center;
+    margin-inline: 2rem;
+}
+
+.slash-price {
+    position: relative; /* Set position to relative */
+    display: inline-block;
+    color: #fde6b7;
+}
+
+.slash-price::before {
+    content: ''; /* Add content for the pseudo-element */
+    position: absolute; /* Set position to absolute */
+    bottom: 50%; /* Position from the bottom */
+    left: 0; /* Position from the left */
+    width: 100%; /* Set width to fill the container */
+    height: 2px; /* Set height of the line */
+    background-color: #fde6b7; /* Set color of the line */
+    transform: translateY(50%) rotate(-45deg); /* Translate and rotate the line */
+}
+
+.arrow-right {
+    width: 25px; /* Adjust width as needed */
+    height: 25px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow-right img {
+    width: 100%; /* Make sure the image takes up the entire space of the div */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.landing-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* !!!!!!!!!!!!!!!!!! */
+/* DISCLAIMER SECTION */
+/* !!!!!!!!!!!!!!!!!! */
+.disclaimer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.disclaimer-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.haz-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.disclaimer-content {
+    text-align: center;
+    padding-inline: 1.625rem;
+}
+
+.discount-input {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+/* !!!!!!!!!!!!! */
+/* MEDIA QUERIES */
+/* !!!!!!!!!!!!! */
+
+/* Ensure full width on smaller screens */
+@media (max-width: 768px) {
+    .landing {
+        display: block;
+    }
+    .landing .product-content {
+        flex-direction: column;
+    }
+    .landing .left-half,
+    .landing .right-half {
+        width: 100%;
+    }
+    .right-half {
+        padding-top: 2rem;
+        align-items: center;
+    }
+    .product-content {
+        padding-bottom: 2rem;
+    }
+    .purchase .with-pad {
+        padding-bottom: 6rem;
+    }
+}
+
+/* Keep original layout on larger screens */
+@media (min-width: 769px) {
+    .landing {
+        display: flex;
+        align-items: center;
+    }
+    .landing .product-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+    .landing .left-half,
+    .landing .right-half {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
