@@ -16,12 +16,11 @@ h1 {
 
 section {
     width: 100vw;
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    flex-grow: 1;
+    /* align-items: center; */
+    /* padding: 1rem; */
     flex-wrap: wrap;
 }
 
@@ -49,35 +48,85 @@ button {
     background-color: #000;
 }
 
-.rounded-border {
+.rounded-border-best-seller {
+    height: 3rem;
+}
+
+.rounded-border, .rounded-border-best-seller {
+    display: flex;
+    align-items: center;
     border: 2px solid black;
     border-radius: 4rem;
     background-color: white;
     color: black;
-    padding: .625rem;
+    padding: 1rem;
     margin-top: -2.525rem;
     white-space: nowrap;
+    
+}
+
+.rounded-border {
+    padding: 2rem;
+    height: 20px;
+    width: 13rem;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .underline {
-    height: 2px; /* Adjust the height of the underline */
-    background-color: black; /* Set the background color to black */
-    width: 100%; /* Make the underline span the full width */
+    height: 2px;
+    /* Adjust the height of the underline */
+    background-color: black;
+    /* Set the background color to black */
+    width: 100%;
+    /* Make the underline span the full width */
 }
 
 .purchase {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    gap: .625rem;
+    align-items: center;
 }
 
 .product-image {
     width: 300px;
+    margin-left: -2rem;
 }
 
 .checkout-button {
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: 1px;
+    min-width: 200px;
+}
+
+.money-back-guarantee {
+    font-size: xx-small;
+    color: black
+}
+
+.money-back-guarantee-white {
+    font-size: xx-small;
+    color: white;
+    
+}
+
+
+.br {
+    display: block;
+    margin-bottom: 0em;
+}
+
+.color-wave {
+    margin-bottom: -1rem;
     width: 100%;
+}
+
+.space {
+    height: 7rem;
 }
 
 /* !!!!!!!!!!!!!!!!!! */
@@ -90,31 +139,48 @@ button {
     justify-content: center;
 }
 
+.landing-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: -30px;
+    margin-top: -3rem;
+}
+
+#logo-main {
+    margin: 1rem;
+    margin-bottom: 0rem;
+    max-width: 10rem;
+    height: auto;
+}
+
 .logo {
-    margin: 0 10px;
-    max-width: 100px;
-    height: 100px;
+    width: 100px;
+    height: auto;
 }
 
 .product-content {
     width: 100%;
     height: 80%;
     display: flex;
-    padding-bottom: 2rem;
-}
-
-.left-half, .right-half {
-    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .left-half {
-    height: auto;
+    height: 100%;
+    width: 50%;
+    min-height: 30rem;
     background-color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    margin: 1rem;
 
     border: 2px solid black;
 }
@@ -122,46 +188,59 @@ button {
 .right-half {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.625rem;
+    align-items: left;
+    width: 50%;
+    margin: 1rem;
+    gap: 1rem;
     color: white;
 }
 
-.right-half h1 {
-    text-align: center;
-}
-
-.right-half > * {
-    margin-left: 1rem;
+.servings-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
 }
 
 .price-display {
     display: flex;
+    justify-content: space-evenly;
     min-width: 30%;
     align-items: center;
-    margin-inline: 2rem;
+    margin-inline: 1rem;
 }
 
 .slash-price {
-    position: relative; /* Set position to relative */
+    position: relative;
+    /* Set position to relative */
     display: inline-block;
     color: #fde6b7;
 }
 
 .slash-price::before {
-    content: ''; /* Add content for the pseudo-element */
-    position: absolute; /* Set position to absolute */
-    bottom: 50%; /* Position from the bottom */
-    left: 0; /* Position from the left */
-    width: 100%; /* Set width to fill the container */
-    height: 2px; /* Set height of the line */
-    background-color: #fde6b7; /* Set color of the line */
-    transform: translateY(50%) rotate(-45deg); /* Translate and rotate the line */
+    content: '';
+    /* Add content for the pseudo-element */
+    position: absolute;
+    /* Set position to absolute */
+    bottom: 50%;
+    /* Position from the bottom */
+    left: 0;
+    /* Position from the left */
+    width: 100%;
+    /* Set width to fill the container */
+    height: 2px;
+    /* Set height of the line */
+    background-color: #fde6b7;
+    /* Set color of the line */
+    transform: translateY(50%) rotate(-45deg);
+    /* Translate and rotate the line */
 }
 
 .arrow-right {
-    width: 25px; /* Adjust width as needed */
-    height: 25px; /* Adjust height as needed */
+    width: 25px;
+    /* Adjust width as needed */
+    height: 25px;
+    /* Adjust height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,13 +248,19 @@ button {
 }
 
 .arrow-right img {
-    width: 100%; /* Make sure the image takes up the entire space of the div */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Make sure the image takes up the entire space of the div */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.price-after {
+    font-size: x-large;
 }
 
 .landing-footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1rem;
     box-sizing: border-box;
@@ -184,20 +269,41 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /* WE DO COFFEE BETTER */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
 .we-do-coffee-better {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
-.we-do-coffee-better .text-content {
-    max-width: 30%;
-    margin-inline: auto;
+.text-and-image-div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+    height: 30rem;
+
+}
+
+.coffee-better-image {
+    max-width: 220px;
+}
+
+.left-text-div {
+    padding-top: 3rem;
+    margin-left: 2rem;
 }
 
 .ingredient-banner {
     display: flex;
-    /* align-items: center */
-    justify-content: center;
+    align-items: start;
+    justify-content: space-evenly;
     max-width: 100%;
     flex-wrap: wrap;
 }
@@ -219,6 +325,117 @@ button {
 /*    TESTIMONIALS     */
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
+.trusted-by-the-elite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonial-title {
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: white;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    border: 3px inset black;
+    min-height: 15rem;
+    max-width: 20rem;
+    
+}
+
+.overlap-picture-stars, .overlap-picture-stars-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -7.7rem;
+    white-space: nowrap;
+    position: absolute;
+    justify-content: space-evenly;
+    
+}
+
+.overlap-picture-stars {
+    justify-content: left;
+    margin-left: -3rem;
+}
+
+.overlap-picture-stars-2 {
+    flex-direction: row-reverse;
+    margin-left: .5rem;
+
+}
+
+.review-picture-div {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.review-picture-1 {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;  
+}
+
+.review-picture-2 {
+    width: 200%;
+    height: 180%;
+    object-fit: cover;
+
+}
+
+.review-picture-3 {
+    width: 200%;
+    height: 130%;
+    object-fit: cover;
+
+}
+
+.review-stars {
+    width: 15rem;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.testimonial-bold-left {
+    display: flex;
+    justify-content: right;
+    margin-right: 11rem;
+    margin-bottom: 1rem;
+
+}
+
+.testimonial-bold-right{
+    display: flex;
+    justify-content: left;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /* PRODUCT W/ ROUNDED  */
@@ -227,8 +444,9 @@ button {
     margin-block: 3.625rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: space-between;
+    margin-top: 50rem;
+    position: absolute;
 }
 
 .product-footer h2 {
@@ -240,38 +458,141 @@ button {
 /* RADICAL TRANSPARENCY*/
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
+.radical-transparency-elements {
+    margin-top: 3rem;
+}
+
 .svg-container {
-    width: 100%; /* Full width of the container */
-    display: inline-block; /* Adjust as needed */
-    line-height: 0; /* Remove space below inline elements */
-    font-size: 0; /* Remove space due to font size */
+    width: 100%;
+    /* Full width of the container */
+    display: inline-block;
+    /* Adjust as needed */
+    line-height: 0;
+    /* Remove space below inline elements */
+    font-size: 0;
+    /* Remove space due to font size */
+    bottom: 0;
+    margin-top: 2rem;
 }
 
 .responsive-svg {
     width: 100%;
     height: auto;
-    display: block; /* Removes bottom space */
-    object-fit: cover; /* Cover the container, potentially cropping the SVG */
+    display: block;
+    /* Removes bottom space */
+    object-fit: cover;
+    /* Cover the container, potentially cropping the SVG */
 }
 
-.radical-transparency .text-content {
-    margin-inline: auto;
-    max-width: 30%;
-}
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*    HOW IT WORKS     */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
+.how-it-works {
+    color: white;
+    padding: 2rem;
+}
+
+.icons-and-images-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icons-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hiw-icons {
+    width: 12rem;
+    height: 12rem;
+}
+
+.hiw-row-1, .hiw-row-2, .hiw-row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.image-and-step-div {
+    display: flex;
+}
+
+.hiw-text {
+    position: relative;
+    font-size: large;
+    right: -15rem;
+    bottom: -2.5rem;
+    flex-wrap: nowrap;
+    height:fit-content;
+    width: fit-content;
+    min-width: 70px;
+}
+
+.hiw-images {
+    width: 15rem;
+    height: 15rem;
+
+}
 
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*   REVIEW CAROUSEL   */
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
+.review-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.review-subtitle {
+    width: 80%;
+    text-align: center;
+}
+
+#reverse-wave {
+    transform: scaleX(-1);
+}
+
+
+
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /* PRODUCT W/ SQUARE   */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
+.svg-container-2 {
+    width: 100%;
+    /* Full width of the container */
+    display: inline-block;
+    /* Adjust as needed */
+    line-height: 0;
+    /* Remove space below inline elements */
+    font-size: 0;
+    /* Remove space due to font size */
+    margin-top: -11rem;
+    margin-bottom: -10rem;
+}
 
 
 /* !!!!!!!!!!!!!!!!!!!*/
@@ -292,7 +613,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .haz-icon {
@@ -308,7 +629,18 @@ button {
 .discount-input {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
     gap: .625rem;
+   
+}
+
+#discount-input-box {
+    width: 50%;
+    padding: .2rem;
+    font-style: italic;
+    color: lightgray;
 }
 
 /* !!!!!!!!!!!!! */
@@ -316,7 +648,7 @@ button {
 /* !!!!!!!!!!!!! */
 
 /* Ensure full width on smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .landing {
         display: block;
     }
@@ -347,10 +679,10 @@ button {
         font-size: 12px;
         text-align: center;
     }
-}
+} */
 
 /* Keep original layout on larger screens */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     .landing {
         display: flex;
         align-items: center;
@@ -367,4 +699,4 @@ button {
     .landing .right-half {
         flex: 0 0 calc(50% - 20px);
     }
-}
+} */
