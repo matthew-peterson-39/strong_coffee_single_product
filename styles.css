@@ -314,6 +314,7 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*    TESTIMONIALS     */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
 .trusted-by-the-elite {
     display: flex;
     flex-direction: column;
@@ -324,6 +325,7 @@ button {
 
 #testimonial-title {
     color: white;
+    margin-bottom: 4rem;
 }
 
 .review {
@@ -331,13 +333,12 @@ button {
     flex-direction: column;
     justify-content: left;
     background-color: white;
-    margin: 4rem;
-    margin-top: 8rem;
+    margin-bottom: 5rem;
     padding-bottom: 2rem;
     border-radius: 2rem;
     border: 2px solid black;
     min-height: 15rem;
-    max-width: 30rem;
+    max-width: 20rem;
     
 }
 
@@ -359,13 +360,13 @@ button {
 
 .overlap-picture-stars-2 {
     flex-direction: row-reverse;
-    margin-left: 7rem;
+    margin-left: .5rem;
 
 }
 
 .review-picture-div {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid black;
@@ -393,7 +394,7 @@ button {
 .testimonial-bold-left {
     display: flex;
     justify-content: right;
-    margin-right: 21rem;
+    margin-right: 11rem;
     margin-bottom: 1rem;
 
 }
@@ -401,7 +402,7 @@ button {
 .testimonial-bold-right{
     display: flex;
     justify-content: left;
-    margin-left: 10.5rem;
+    margin-left: 4rem;
     margin-bottom: 1rem;
 }
 
