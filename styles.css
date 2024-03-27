@@ -116,11 +116,8 @@ button {
 }
 
 .color-wave {
-    width: 110%;
-    margin: -10rem;
-    margin-bottom: -17rem;
-    margin-top: -12rem;
-
+    margin-bottom: -1rem;
+    width: 100%;
 }
 
 .space {
@@ -466,11 +463,6 @@ button {
     /* Removes bottom space */
     object-fit: cover;
     /* Cover the container, potentially cropping the SVG */
-}
-
-.radical-transparency .text-content {
-    margin-inline: auto;
-    max-width: 30%;
 }
 
 
