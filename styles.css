@@ -62,6 +62,7 @@ button {
     padding: 1rem;
     margin-top: -2.525rem;
     white-space: nowrap;
+    
 }
 
 .rounded-border {
@@ -72,6 +73,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .underline {
@@ -264,6 +266,7 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /* WE DO COFFEE BETTER */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
 .we-do-coffee-better {
     display: flex;
     align-items: center;
@@ -443,6 +446,10 @@ button {
 /* RADICAL TRANSPARENCY*/
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
+.radical-transparency-elements {
+    margin-top: 3rem;
+}
+
 .svg-container {
     width: 100%;
     /* Full width of the container */
@@ -452,8 +459,8 @@ button {
     /* Remove space below inline elements */
     font-size: 0;
     /* Remove space due to font size */
-    height: 22rem;
-    margin-top: -14rem;
+    bottom: 0;
+    margin-top: 2rem;
 }
 
 .responsive-svg {
