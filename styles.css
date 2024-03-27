@@ -144,15 +144,15 @@ button {
     align-items: center;
     justify-content: center;
     padding: 0px;
-    margin: -10px;
+    margin: -30px;
     margin-top: -3rem;
 }
 
 #logo-main {
     margin: 1rem;
+    margin-bottom: 0rem;
     max-width: 10rem;
     height: auto;
-    fill: white !important;
 }
 
 .logo {
@@ -165,9 +165,9 @@ button {
     height: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1 rem;
-    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .left-half {
@@ -193,6 +193,13 @@ button {
     margin: 1rem;
     gap: 1rem;
     color: white;
+}
+
+.servings-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
 }
 
 .price-display {
@@ -438,7 +445,7 @@ button {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 47rem;
+    margin-top: 50rem;
     position: absolute;
 }
 
