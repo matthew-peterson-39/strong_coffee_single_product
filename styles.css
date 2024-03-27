@@ -48,7 +48,11 @@ button {
     background-color: #000;
 }
 
-.rounded-border {
+.rounded-border-best-seller {
+    height: 3rem;
+}
+
+.rounded-border, .rounded-border-best-seller {
     display: flex;
     align-items: center;
     border: 2px solid black;
@@ -58,7 +62,6 @@ button {
     padding: 1rem;
     margin-top: -2.525rem;
     white-space: nowrap;
-    height: 40px;
 }
 
 .underline {
@@ -311,6 +314,101 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*    TESTIMONIALS     */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+.trusted-by-the-elite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonial-title {
+    color: white;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: white;
+    margin: 4rem;
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    min-height: 15rem;
+    max-width: 30rem;
+    
+}
+
+.overlap-picture-stars, .overlap-picture-stars-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -7.7rem;
+    white-space: nowrap;
+    position: absolute;
+    justify-content: space-evenly;
+    
+}
+
+.overlap-picture-stars {
+    justify-content: left;
+    margin-left: -3rem;
+}
+
+.overlap-picture-stars-2 {
+    flex-direction: row-reverse;
+    margin-left: 7rem;
+
+}
+
+.review-picture-div {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-picture {
+    width: 200%;
+    height: 150%;
+    
+}
+
+.review-stars {
+    width: 15rem;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.testimonial-bold-left {
+    display: flex;
+    justify-content: right;
+    margin-right: 21rem;
+    margin-bottom: 1rem;
+
+}
+
+.testimonial-bold-right{
+    display: flex;
+    justify-content: left;
+    margin-left: 10.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
