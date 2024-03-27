@@ -49,25 +49,31 @@ button {
 }
 
 .rounded-border {
+    display: flex;
+    align-items: center;
     border: 2px solid black;
     border-radius: 4rem;
     background-color: white;
     color: black;
-    padding: .625rem;
+    padding: 1rem;
     margin-top: -2.525rem;
     white-space: nowrap;
+    height: 40px;
 }
 
 .underline {
-    height: 2px; /* Adjust the height of the underline */
-    background-color: black; /* Set the background color to black */
-    width: 100%; /* Make the underline span the full width */
+    height: 2px;
+    /* Adjust the height of the underline */
+    background-color: black;
+    /* Set the background color to black */
+    width: 100%;
+    /* Make the underline span the full width */
 }
 
 .purchase {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
 .product-image {
@@ -85,10 +91,23 @@ button {
     color: black
 }
 
+.money-back-guarantee-white {
+    font-size: xx-small;
+    color: white;
+}
+
 
 .br {
     display: block;
     margin-bottom: 0em;
+}
+
+.color-wave {
+    width: 110%;
+    margin: -10rem;
+    margin-bottom: -18rem;
+    margin-top: -15rem;
+
 }
 
 /* !!!!!!!!!!!!!!!!!! */
@@ -101,31 +120,46 @@ button {
     justify-content: center;
 }
 
+.landing-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: -10px;
+    margin-top: -3rem;
+}
+
+#logo-main {
+    margin: 1rem;
+    max-width: 10rem;
+    height: auto;
+}
+
 .logo {
-    margin: 0 10px;
-    max-width: 100px;
-    height: 100px;
+    width: 100px;
+    height: auto;
 }
 
 .product-content {
     width: 100%;
     height: 80%;
     display: flex;
-    padding-bottom: 2rem;
-}
-
-.left-half, .right-half {
-    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1 rem;
 }
 
 .left-half {
-    height: auto;
+    height: 100%;
+    width: 50%;
+    min-height: 30rem;
     background-color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    margin: 1rem;
 
     border: 2px solid black;
 }
@@ -133,46 +167,60 @@ button {
 .right-half {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.625rem;
+    align-items: left;
+    width: 50%;
+    margin: 1rem;
+    gap: 1rem;
     color: white;
 }
 
-.right-half h1 {
+/* .right-half h1 {
     text-align: center;
 }
 
 .right-half > * {
     margin-left: 1rem;
-}
+} */
 
 .price-display {
     display: flex;
+    justify-content: space-evenly;
     min-width: 30%;
     align-items: center;
-    margin-inline: 2rem;
+    margin-inline: 1rem;
 }
 
 .slash-price {
-    position: relative; /* Set position to relative */
+    position: relative;
+    /* Set position to relative */
     display: inline-block;
     color: #fde6b7;
 }
 
 .slash-price::before {
-    content: ''; /* Add content for the pseudo-element */
-    position: absolute; /* Set position to absolute */
-    bottom: 50%; /* Position from the bottom */
-    left: 0; /* Position from the left */
-    width: 100%; /* Set width to fill the container */
-    height: 2px; /* Set height of the line */
-    background-color: #fde6b7; /* Set color of the line */
-    transform: translateY(50%) rotate(-45deg); /* Translate and rotate the line */
+    content: '';
+    /* Add content for the pseudo-element */
+    position: absolute;
+    /* Set position to absolute */
+    bottom: 50%;
+    /* Position from the bottom */
+    left: 0;
+    /* Position from the left */
+    width: 100%;
+    /* Set width to fill the container */
+    height: 2px;
+    /* Set height of the line */
+    background-color: #fde6b7;
+    /* Set color of the line */
+    transform: translateY(50%) rotate(-45deg);
+    /* Translate and rotate the line */
 }
 
 .arrow-right {
-    width: 25px; /* Adjust width as needed */
-    height: 25px; /* Adjust height as needed */
+    width: 25px;
+    /* Adjust width as needed */
+    height: 25px;
+    /* Adjust height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,13 +228,19 @@ button {
 }
 
 .arrow-right img {
-    width: 100%; /* Make sure the image takes up the entire space of the div */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Make sure the image takes up the entire space of the div */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.price-after {
+    font-size: x-large;
 }
 
 .landing-footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1rem;
     box-sizing: border-box;
@@ -199,15 +253,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;     
+    gap: 1rem;
 }
 
 #coffee-better-text-and-image {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 
-.side-images { 
+.side-images {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -215,7 +269,7 @@ button {
     top: -2rem;
     right: -3rem;
     height: 30rem;
-    
+
 }
 
 .coffee-better-image {
@@ -236,7 +290,7 @@ button {
 .ingredient-banner {
     display: flex;
     align-items: start;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     max-width: 100%;
     flex-wrap: wrap;
 }
@@ -246,20 +300,12 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;   
+    text-align: center;
 }
 
 .icon {
     width: 100px;
     height: 100px;
-}
-
-#blue-wave {
-    width: 110%;
-    margin: -10rem;
-    margin-bottom: -18rem;
-    margin-top: -15rem;
-    
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
@@ -288,17 +334,23 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
 .svg-container {
-    width: 100%; /* Full width of the container */
-    display: inline-block; /* Adjust as needed */
-    line-height: 0; /* Remove space below inline elements */
-    font-size: 0; /* Remove space due to font size */
+    width: 100%;
+    /* Full width of the container */
+    display: inline-block;
+    /* Adjust as needed */
+    line-height: 0;
+    /* Remove space below inline elements */
+    font-size: 0;
+    /* Remove space due to font size */
 }
 
 .responsive-svg {
     width: 100%;
     height: auto;
-    display: block; /* Removes bottom space */
-    object-fit: cover; /* Cover the container, potentially cropping the SVG */
+    display: block;
+    /* Removes bottom space */
+    object-fit: cover;
+    /* Cover the container, potentially cropping the SVG */
 }
 
 .radical-transparency .text-content {
@@ -363,7 +415,7 @@ button {
 /* !!!!!!!!!!!!! */
 
 /* Ensure full width on smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .landing {
         display: block;
     }
@@ -394,10 +446,10 @@ button {
         font-size: 12px;
         text-align: center;
     }
-}
+} */
 
 /* Keep original layout on larger screens */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     .landing {
         display: flex;
         align-items: center;
@@ -414,4 +466,4 @@ button {
     .landing .right-half {
         flex: 0 0 calc(50% - 20px);
     }
-}
+} */
