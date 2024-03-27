@@ -64,6 +64,16 @@ button {
     white-space: nowrap;
 }
 
+.rounded-border {
+    padding: 2rem;
+    height: 20px;
+    width: 13rem;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .underline {
     height: 2px;
     /* Adjust the height of the underline */
@@ -84,7 +94,7 @@ button {
 }
 
 .checkout-button {
-    width: 11rem;
+    width: fit-content;
     font-weight: bold;
     margin-bottom: 1px;
 }
@@ -108,9 +118,13 @@ button {
 .color-wave {
     width: 110%;
     margin: -10rem;
-    margin-bottom: -18rem;
-    margin-top: -15rem;
+    margin-bottom: -17rem;
+    margin-top: -12rem;
 
+}
+
+.space {
+    height: 7rem;
 }
 
 /* !!!!!!!!!!!!!!!!!! */
@@ -150,6 +164,7 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1 rem;
+    margin-top: 2rem;
 }
 
 .left-half {
@@ -259,7 +274,7 @@ button {
     gap: 1rem;
 }
 
-#coffee-better-text-and-image {
+.text-and-image-div {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -269,8 +284,6 @@ button {
     flex-direction: column;
     position: relative;
     right: 0;
-    top: -2rem;
-    right: -3rem;
     height: 30rem;
 
 }
@@ -279,15 +292,15 @@ button {
     max-width: 220px;
 }
 
-#coffee-better-text-div {
+.left-text-div {
     padding-top: 3rem;
-    max-width: 26rem;
+    margin-left: 2rem;
 }
 
 .text-content {
-    width: 24rem;
-    margin-left: 0rem;
-    position: absolute;
+    
+    
+
 }
 
 .ingredient-banner {
@@ -336,7 +349,7 @@ button {
     margin-bottom: 5rem;
     padding-bottom: 2rem;
     border-radius: 2rem;
-    border: 2px solid black;
+    border: 3px inset black;
     min-height: 15rem;
     max-width: 20rem;
     
@@ -419,8 +432,9 @@ button {
     margin-block: 3.625rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: space-between;
+    margin-top: 47rem;
+    position: absolute;
 }
 
 .product-footer h2 {
@@ -441,6 +455,8 @@ button {
     /* Remove space below inline elements */
     font-size: 0;
     /* Remove space due to font size */
+    height: 22rem;
+    margin-top: -14rem;
 }
 
 .responsive-svg {
@@ -456,6 +472,7 @@ button {
     margin-inline: auto;
     max-width: 30%;
 }
+
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*    HOW IT WORKS     */
