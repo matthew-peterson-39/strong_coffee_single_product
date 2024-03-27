@@ -19,8 +19,6 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* padding: 1rem; */
     flex-wrap: wrap;
 }
 
@@ -261,7 +259,6 @@ button {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 1rem;
     box-sizing: border-box;
 }
 
