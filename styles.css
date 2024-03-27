@@ -542,6 +542,19 @@ button {
 /* PRODUCT W/ SQUARE   */
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
+.svg-container-2 {
+    width: 100%;
+    /* Full width of the container */
+    display: inline-block;
+    /* Adjust as needed */
+    line-height: 0;
+    /* Remove space below inline elements */
+    font-size: 0;
+    /* Remove space due to font size */
+    margin-top: -11rem;
+    margin-bottom: -10rem;
+}
+
 
 /* !!!!!!!!!!!!!!!!!!!*/
 /*     DISCLAIMER     */
@@ -561,7 +574,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .haz-icon {
@@ -577,7 +590,18 @@ button {
 .discount-input {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
     gap: .625rem;
+   
+}
+
+#discount-input-box {
+    width: 50%;
+    padding: .2rem;
+    font-style: italic;
+    color: lightgray;
 }
 
 /* !!!!!!!!!!!!! */
