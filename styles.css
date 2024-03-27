@@ -99,6 +99,7 @@ button {
     width: fit-content;
     font-weight: bold;
     margin-bottom: 1px;
+    min-width: 200px;
 }
 
 .money-back-guarantee {
@@ -478,33 +479,57 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 
 .how-it-works {
-
+    color: white;
+    padding: 2rem;
 }
 
 .icons-and-images-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
 .icons-div {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .hiw-icons {
-    width: 4rem;
-    height: 4rem;
+    width: 12rem;
+    height: 12rem;
 }
 
-.images-div {
+.hiw-row-1, .hiw-row-2, .hiw-row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
 .image-and-step-div {
+    display: flex;
+}
 
+.hiw-text {
+    position: relative;
+    font-size: large;
+    right: -15rem;
+    bottom: -2.5rem;
+    flex-wrap: nowrap;
+    height:fit-content;
+    width: fit-content;
+    min-width: 70px;
 }
 
 .hiw-images {
-    width: 4rem;
-    height: 4rem;
+    width: 15rem;
+    height: 15rem;
+
 }
 
 
