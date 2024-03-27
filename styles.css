@@ -152,6 +152,7 @@ button {
     margin: 1rem;
     max-width: 10rem;
     height: auto;
+    fill: white !important;
 }
 
 .logo {
@@ -176,7 +177,7 @@ button {
     background-color: wheat;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
@@ -193,14 +194,6 @@ button {
     gap: 1rem;
     color: white;
 }
-
-/* .right-half h1 {
-    text-align: center;
-}
-
-.right-half > * {
-    margin-left: 1rem;
-} */
 
 .price-display {
     display: flex;
@@ -300,12 +293,6 @@ button {
     margin-left: 2rem;
 }
 
-.text-content {
-    
-    
-
-}
-
 .ingredient-banner {
     display: flex;
     align-items: start;
@@ -384,17 +371,32 @@ button {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    object-fit: cover;
     border: 2px solid black;
     overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
-.review-picture {
-    width: 200%;
+.review-picture-1 {
+    width: 100%;
     height: 150%;
-    
+    object-fit: cover;  
+}
+
+.review-picture-2 {
+    width: 200%;
+    height: 180%;
+    object-fit: cover;
+
+}
+
+.review-picture-3 {
+    width: 200%;
+    height: 130%;
+    object-fit: cover;
+
 }
 
 .review-stars {
@@ -559,6 +561,10 @@ button {
 .review-subtitle {
     width: 80%;
     text-align: center;
+}
+
+#reverse-wave {
+    transform: scaleX(-1);
 }
 
 
