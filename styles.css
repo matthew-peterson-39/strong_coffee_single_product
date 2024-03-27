@@ -256,13 +256,10 @@ button {
 
 #blue-wave {
     width: 110%;
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-bottom: -240px;
-    margin-top: -220px;
+    margin: -10rem;
+    margin-bottom: -18rem;
+    margin-top: -15rem;
+    
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
