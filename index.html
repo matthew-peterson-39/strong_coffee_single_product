@@ -15,14 +15,16 @@
     <!-------------------------->
     <section class="landing red">
         <div class="landing-logo">
-            <img id="logo-main" src="./assets/strong-coffee-log.svg" alt="">
+            <img id="logo-main" src="./assets/strong-coffee-log.svg" alt="strong coffee log">
         </div>
         <div class="product-content">
             <div class="left-half">
                 <div class="rounded-border-best-seller">
                     <h1>Best Seller</h1>
                 </div>
-                <img class="product-image" src="./assets/22.png" alt="">
+                <div class="product-image-div">
+                    <img class="product-image" src="./assets/22.png" alt="Instant Latte + Essentials">
+                </div>
                 <div class="underline"></div>
                 <h1>12 Servings</h1>
             </div>
@@ -194,7 +196,7 @@
                 <div class="rounded-border-best-seller">
                     <h1>Best Seller</h1>
                 </div>
-                <img class="product-image" src="assets/22.png" alt="">
+                <img class="product-image" src="assets/22.png" alt="Instant Latte + Essentials">
                 <div class="underline"></div>
                 <h1>12 Servings</h1>
             </div>
@@ -274,7 +276,6 @@
             <div class="icons-div">
 
 
-
             </div>
             <div class="images-div">
                 <div class="hiw-row-1">
@@ -310,8 +311,13 @@
     <!--    REVIEW CAROUSEL   -->
     <!-------------------------->
     <section class="review-carousel tan">
-        <h1>Don't just take our word for it.</h1>
-        <p>Here is what thousands of happy customers have to say... </p>
+        <div class="review-text">
+            <h1>Don't just take <i>our</i> word for it.</h1>
+            <div class="review-subtitle">
+                <p>Here is what thousands of happy customers have to say... </p>
+            </div>
+        </div>
+        <img class="color-wave" id="reverse-red" src="./assets/red-wave-2.png" alt="red wave">
     </section>
 
     <!------------------------->
@@ -323,7 +329,7 @@
                 <div class="rounded-border-best-seller">
                     <h1>Best Seller</h1>
                 </div>
-                <img class="product-image" src="./assets/22.png" alt="">
+                <img class="product-image" src="./assets/22.png" alt="Instant Latte + Essentials">
                 <div class="underline"></div>
                 <h1>12 Servings</h1>
             </div>
@@ -343,8 +349,9 @@
                     <div class="arrow-right">
                         <img src="./assets/white-arrow-right.svg" alt="arrow point to right">
                     </div>
-                    <div class="price after">
+                    <div class="price-after">
                         <h2>$33</h2>
+                        <p class="money-back-guarantee-white"><i>Only $2.75/cup!</i></p>
                     </div>
                 </div>
                 <div class="purchase">
@@ -380,7 +387,7 @@
         </div>
         <div class="discount-input">
             <input type="text" name="" id="discount-input-box" placeholder="Email">
-            <button>Lock In Your Discount</button>
+            <button class="checkout-button">Lock In Your Discount</button>
         </div>
     </section>
 </body>

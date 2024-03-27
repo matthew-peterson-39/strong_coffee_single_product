@@ -93,6 +93,7 @@ button {
 
 .product-image {
     width: 300px;
+    margin-left: -2rem;
 }
 
 .checkout-button {
@@ -110,6 +111,7 @@ button {
 .money-back-guarantee-white {
     font-size: xx-small;
     color: white;
+    
 }
 
 
@@ -174,7 +176,7 @@ button {
     background-color: wheat;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
@@ -536,6 +538,30 @@ button {
 /*!!!!!!!!!!!!!!!!!!!!!*/
 /*   REVIEW CAROUSEL   */
 /*!!!!!!!!!!!!!!!!!!!!!*/
+
+.review-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.review-subtitle {
+    width: 80%;
+    text-align: center;
+}
+
+
 
 
 /*!!!!!!!!!!!!!!!!!!!!!*/
